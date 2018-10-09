@@ -1,0 +1,43 @@
+.card {
+	/* transform: scaleZ(0.3); */
+	height: 600px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: var(--dark-purple);
+
+	.cardAnswer {
+		padding: 0 20px;
+	}
+
+	.cardActions {
+		width: 100%;
+		/* padding: 10px; */
+		box-sizing: border-box;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+		> * {
+			padding: 10px;
+			transition: 0.2s;
+			cursor: pointer;
+			font-size: 2rem;
+			font-weight: bold;
+		}
+
+		.show:hover {
+			background-color: var(--dark-purple);
+			color: #fff;
+		}
+
+		.guessSuccess {
+			background: var(--green);
+			color: #fff;
+		}
+		.guessFail {
+			background: #ab1121;
+			color: #fff;
+		}
+	}
+}

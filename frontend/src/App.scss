@@ -1,0 +1,77 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+:root {
+  --green: #2ecc71;
+  --dark-purple: #3b265e;
+  --light-purple: #5b2a86;
+  --cyan: #75dddd;
+  --anti-flash-white: #f1e3f3;
+  --pink: #9161a2;
+}
+
+@font-face {
+  font-family: 'sans_forgeticaregular';
+  src: url('./assets/fonts/sansforgetica-regular-webfont.woff2') format('woff2'),
+    url('./assets/fonts/sansforgetica-regular-webfont.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'sans_forgeticaregular';
+  // font-family: 'Fira Sans', sans-serif;
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+  height: 100vh;
+  background: linear-gradient(to top, var(--dark-purple), var(--cyan));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    width: 500px;
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    width: 600px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    width: 700px;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    width: 800px;
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    width: 900px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3rem;
+  color: var(--dark-purple, #3b265e);
+}
+
+.App {
+  text-align: center;
+}
